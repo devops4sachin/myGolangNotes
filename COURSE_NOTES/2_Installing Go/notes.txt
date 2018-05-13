@@ -1,0 +1,103 @@
+################ Installing Go #################
+
+###### 6. Installation Insights
+
+	Installation Insights
+	download go; run sha1 checksum openssl sha1; uninstall any old versions; install new version
+	download go
+	sha1 checksum
+	uninstall old version
+	install new version
+	go version
+
+
+###### 7. Go Workspace
+
+	- Learn the importance of your Go workspace. Learn how to configure your Go workspace. Learn about namespacing, the importance of namespacing, and how Go implements namespacing.
+	- Only one folder - any name, any location
+		bin
+		pkg
+		src
+			github.com
+			<github.com username>
+			folder with code for project / repo
+			folder with code for project / repo
+			folder with code for project / repo
+			folder with code for project / repo
+			...
+			folder with code for project / repo
+	- namespacing
+	- # go get github_location_for_go_repo
+	- package management
+
+
+###### 8. Environment Variables
+
+	- # go env
+		GOROOT = installation path where go is installed
+		GOPATH = To your workspace
+		GOBIN = Where you want all the bin to land in
+
+###### 9. Windows - Configuring Path Variables
+
+	- computer / properties / advanced system settings / environment variables / 
+		googling for location on different windows versions
+		search box in windows
+		user variables vs system variables
+	- set GOPATH variable
+		copying the path from windows explorer
+	- set GOROOT
+	- Setting a PATH variable to your bin
+		set "C:\Sachin_Folder\GoProjects\bin" to your env variable, so that the go .exe can be run directly.
+	
+
+###### 10. Mac - Configuring Path Variables
+
+	- Set variable in the "bash_profile"
+		# cd ~
+		# users home
+		# ls -la
+		# hidden files
+		# .bash_profile
+		# .bashrc
+			export GOROOT="/usr/local/go"
+			export GOPATH="$HOME/GoPrograms/"
+			export PATH="$PATH:$HOME/GoPrograms/bin"	-- So that the go exe can be executed directly
+				
+		# nano
+
+###### 15. Testing Your Installation
+
+	​Test your installation and, at the same time, get all of the sample code used in this training!
+		# go env
+		# go version
+		# go get github.com/devops4sachin/GolangTraining
+
+###### 16. Section Review
+
+	github terminal emulator
+	basic terminal commands
+	ls -la
+	cd 
+	cd ../
+	pwd
+	env
+	sha1 checksum
+	go command
+	go
+	go version
+	go env
+	go get 
+	Go workspace
+	bin
+	pkg
+	src
+	github.com
+	<github.com username>
+	folder with code for project / repo
+	GOPATH
+	GOROOT
+	namespacing
+	environment path variables
+	using go get to get the code used in this course
+

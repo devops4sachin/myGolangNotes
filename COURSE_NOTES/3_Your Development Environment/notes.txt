@@ -1,0 +1,105 @@
+################## Your Development Environment ####################
+
+###### 17. Section Overview
+
+	IDE’s (integrated development environment)
+	WebStorm
+	Atom.io
+	Configuring Webstorm
+	Using Webstorm
+	go run, go build, go install
+	Understanding Github
+	Creating Your Own Repo
+	Using Github
+
+###### 18. Go Editors
+
+	IDE’s
+	Webstorm
+	plugins
+	golang plugin
+	creating a new project || package || library
+	GO SDK
+	themes
+	http://www.ideacolorthemes.org/home/
+	live edit
+	JETBrains IDE Support Chrome Plugin
+
+###### 19. WebStorm & Atom.io
+###### 20. Free For Students - WebStorm
+###### 21. Creating Your First Project
+	
+	-** Your package Name should match the Folder name.
+	- Package name should be short and concise. By convention packages are given lower case, single-word names; there should be no need to underscores or mixCaps.
+
+	- code completion.
+	- terminal in VisualStudioCode
+		go fmt
+		go run
+		
+	- see the documentation : Ctrl+ mouse over Println, will give you the documentation for that.
+	
+	- Ctrl + K : clears the terminal.
+
+	- setting your theme
+
+###### 22. Hello World with Webstorm
+
+###### 23. The Go Command & Documentation
+
+	- Documentation for go command:
+		# go help command
+		# go help fmt
+			PS C:\Sachin_Folder\GoProjects\src\mygoprograms> go help fmt
+			usage: go fmt [-n] [-x] [packages]
+		
+			Fmt runs the command 'gofmt -l -w' on the packages named
+			by the import paths. It prints the names of the files that are modified.
+			
+		- https://golang.org/cmd/go : search for the command
+		
+	- go run
+		needs a file name, eg, go run main.go
+	- go build
+		for an executable:
+			builds the exe file
+			reports errors, if any
+			if there are no errors, it puts an executable into the current folder
+		for a package:
+			builds the file
+			reports errors, if any
+			throws away binary
+	- go install
+		for an executable:
+			compiles the program (builds it)
+			names the executable the folder name holding the code
+			puts the executable in workspace / bin
+				$GOPATH / bin
+		for a package:
+			compiles the package (builds it)
+			puts the executable in workspace / pkg
+				GOPATH / pkg
+			it an archive file
+	- go clean : It removes the executable that was generated from the current folder.
+	
+	
+
+###### 24. Understanding Github
+###### 25. Using Github
+
+	Creating Your Own Repo
+		- git init 
+	pushing code to github 
+		- from terminal
+			git status
+			git add --all
+			git commit -m “first commit”
+			first time - set remote repository (repo)
+			
+			git remote add origin https://github.com/devops4sachin/udemyTraining.git
+			git push -u origin master
+			
+			git push
+
+
+###### 26. Section Review

@@ -1,0 +1,68 @@
+################## Computer Fundamentals ####################
+
+######## 34 :Text Encoding
+	hexadecimal
+		often called hex
+		sometimes has “0x” prefix indicating it’s hex
+	Octal
+		There is a base 8 numbering system called Octal
+		often called Oct
+		Question: 
+		how would you represent the number 42 in Oct?
+		Why have Oct?
+	ASCII
+	UTF
+
+######## 35 :Coding Scheme Programs
+	format printing
+		a program that prints a quantity in decimal
+		a program that prints a quantity in binary
+		a program that prints a quantity in hex
+	format verbs
+		%d
+		%b
+		%x
+	escape characters
+		\n
+	godoc.org documentation
+
+######## 36 : Format Printing
+	format verbs
+		%#x
+		%#X
+	escape characters
+		\t
+	a program that prints a series of numbers in decimal, binary, and hex
+	loop syntax
+	a program that prints the first 200 characters of UTF-8
+	loop syntax
+
+
+######## 37 : Section Review
+
+		# go get
+	updating a package
+		# go get -u [package name]
+	reading docs
+		go
+		go help get
+	Numeral systems
+		decimal
+		binary
+		hexadecimal
+		octal
+	Text Encoding
+		ASCII
+		UTF
+	Coding Scheme Programs
+	format printing
+	format verbs
+		%d
+		%b
+		%x
+	escape characters
+		\n
+		\t
+	loop
+	printed the first 200 characters of UTF-8
+	printed a series of numbers in decimal, binary, and hex

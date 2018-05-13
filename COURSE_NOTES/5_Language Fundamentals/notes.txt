@@ -1,0 +1,152 @@
+################## Language Fundamentals ####################
+
+######### 38. Section Overview
+
+	preview
+		packages
+		variables
+			- shorthand
+			- var → zero value
+	scope
+	blank identifier
+	constants
+	memory addresses (pointers)
+	remainder
+
+
+######### 39. Packages
+
+	- The folder name and the package name should be same.
+	- For some file to be executable, it should be declared as a package main and should have func main().
+		- refer to https://github.com/devops4sachin/GolangTraining/tree/master/02_package
+	
+	- one folder can have many files
+		- package declaration in every file is mandatory
+		- package scope
+			- something in one file is accessible to another file with in the same package.
+				- refer to https://github.com/devops4sachin/GolangTraining/tree/master/02_package/stringutil
+				
+		imports have file scope
+	exported / unexported 
+		aka, visible / not visible
+		we don’t say (generally speaking): public / private
+		Capitalization : 
+			- capitalize: exported, visible outside the package.
+			- lowercase: unexported, not visible outside the package.
+
+			
+######### 40. Go Commands
+
+	go commands
+		go run
+		go build
+		go install	- it put in the main exe in the GOBIN folder. for the non-main files it creates archive file ".a" and put that in GOBIN file.
+		go clean	- cleans the exe files
+
+		
+######### 41. Variables
+
+	shorthand declaration : can only be used inside func.
+	var : if no value given zero value for corresponding type.
+	type format verb %T : To see the type
+	
+	not preferred methods
+	
+	declare, assign, initialize
+	
+	
+######### 42. Scope
+
+	- levels of scope : Recommended to keep the scope as small as possible, to avoid accidental change of value of variables.
+		- universe
+		- package
+		- file
+		- block (curly braces)
+			FYI
+			{} - braces, curly braces, curlies, mustaches
+			[] - brackets
+			() - parentheses, parens
+			
+	- package level scope
+		for variables
+		not for imports
+	- file level scope
+		imports
+	- block level scope
+	- keep your scope tight
+	
+	- Any thing accessible in the outer scope is accessible in the inner scope.
+
+######### 43. Scope II
+
+	an example of 
+		block level scope
+		order mattering in block level scope
+		variable shadowing
+
+
+######### 44. Closure
+
+	- variables declared in the outer scope are accessible by statements in the inner scopes which are enclosed by the outer scope
+
+	
+######### 45. Language Specs
+
+	- The scope of a predeclared identifier is the universe block.
+	- The scope of an identifier denoting a constant, type, variable, or function (but not method) declared at top level (outside any function) is the package block.
+	- The scope of the package name of an imported package is the file block of the file containing the import declaration.
+	- The scope of an identifier denoting a method receiver, function parameter, or result variable is the function body.
+	- The scope of a constant or variable identifier declared inside a function begins at the end of the ConstSpec or VarSpec (ShortVarDecl for short variable declarations) and ends at the end of the innermost containing block.
+	- The scope of a type identifier declared inside a function begins at the identifier in the TypeSpec and ends at the end of the innermost containing block
+	
+	
+	
+######### 46. Blank Identifier
+
+	- you must use everything you put in your code
+		if you declare a variable, you must use it
+	- the blank identifier
+		_ : allows you to tell the compiler you aren’t using something
+			example
+			http.Get
+			throwing away an error
+
+			
+######### 47 & 48 Constants
+
+	a simple, unchanging value
+		iota’s
+	creating constants values for
+		KB
+		MB
+		GB
+		TB
+		
+	a simple, unchanging value
+	a parallel type system
+		- C / C++ has problems with a lack of strict typing
+		- in Go, there is no mixing of numeric types
+	there are TYPED and UNTYPED constants
+		- const hello = "Hello, World"
+		- const typedHello string = "Hello, World"
+	UNTYPED constant
+		- a constant value that does not yet have a fixed type
+			- a “kind”
+			- not yet forced to obey the strict rules that prevent combining differently typed values
+	It is this notion of an untyped constant that makes it possible for us to use constants in Go with great freedom.
+	This is useful, for instance
+		what is the type of 42?
+			- int?
+			- uint?
+			- float64?
+		if we didn’t have UNTYPED constants (constants of a kind), then we would have to do conversion on every literal value we used
+		and that would suck
+
+		
+######### 51 & 52 Pointers
+
+	- Using memory addresses in statements
+	- referencing / dereferencing
+
+	- Using Pointers
+	- It’s all pass by value

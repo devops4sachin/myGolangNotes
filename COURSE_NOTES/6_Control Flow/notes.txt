@@ -1,0 +1,100 @@
+################## Control Flow ####################
+
+######### 55 Section overview
+
+	sequence
+	loop / iterative
+		- for loop
+			init, cond, post
+		- bool (while-ish)
+			infinite
+		- do-while-ish
+			break
+		- continue
+		- nested
+		- conditionals
+			switch / case / default statements
+				no default fall-through
+				creating fall-through
+				multiple cases
+				cases can be expressions
+					- evaluate to true, they run
+				type
+		- if
+			the not operator : !
+		initialization statement
+		if / else
+		if / else if / else
+		if / else if / else if / … / else
+		Exercises
+
+		
+######### 56, 57, 58 For loop, Nested, Condition, break, continue
+
+	resources
+		https://forum.golangbridge.org/
+		Dave Cheney
+	for loop
+		documentation
+			language spec
+			effective go
+		initialization, condition, post
+	
+	for loop
+		nested loops
+	
+	for loop
+		condition
+		no condition
+		break
+		continue
+
+		
+######### 59 Documentation & Terminology
+
+	documentation
+		golang spec
+		effective go
+	terminology
+		lexical elements : represent the vocabulary of a language. check golang specs.
+		literal values
+		runes
+	rune : represented by '', single quotes.
+		UTF8 - is used to represent all the characters in the world.
+		- UTF8 starts and contains the ASCII characters as well.
+		Rune represents a single character.
+		-** For rune we use a single quote '', for strings we use "" or ``.
+		Rune : an integer value identifying a Unicode code point
+		- alias for int32, storing the number representation of a character in a rune.
+			how many bytes in 32 bits? (4 bytes → 4 * 8 = 32)
+			- UTF-8 is a 4 byte coding scheme
+			with int32 (4 bytes) we have numbers for each of the code points
+
+			
+######### 60 Rune
+
+	casey neistat
+	rune : Every RUNE is a number which is alias for int32 which is a numeric type which stores 4 bytes.
+	printing UTF-8
+
+	
+######### 61 String Type
+
+	using single-quotes
+	strings
+		made up of runes
+
+	String Literal : A string literal represents a string constant obtained from concatenating a sequence of characters.
+		- String literal are represented by ``, it can contain spaces and multiple enters.
+		
+		
+######### 62 Switch Statements
+
+	switch / case / default statements
+		no default fall-through
+		creating fall-through
+		multiple cases
+		cases can be expressions
+			evaluate to true, they run
+		type
+	
