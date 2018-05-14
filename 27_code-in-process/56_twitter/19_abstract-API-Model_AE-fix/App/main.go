@@ -4,8 +4,8 @@ import (
 	"html/template"
 	"net/http"
 
-	"github.com/devops4sachin/GolangTraining/56_twitter/19_abstract-API-Model_AE-fix/API"
-	"github.com/devops4sachin/GolangTraining/56_twitter/19_abstract-API-Model_AE-fix/Memcache"
+	"github.com/devops4sachin/myGolangNotes/56_twitter/19_abstract-API-Model_AE-fix/API"
+	"github.com/devops4sachin/myGolangNotes/56_twitter/19_abstract-API-Model_AE-fix/Memcache"
 	"github.com/julienschmidt/httprouter"
 )
 

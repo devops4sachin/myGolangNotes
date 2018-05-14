@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 
-	if true {
+	if true { // true is a reserved word here, in Python its True
 		fmt.Println("This ran")
 	}
 

@@ -6,9 +6,9 @@ func main() {
 	fmt.Println(greet("Jane ", "Doe"))
 }
 
-func greet(fname string, lname string) (s string) {
+func greet(fname string, lname string) (s string) { // We are returning "s" here, this is called return naming
 	s = fmt.Sprint(fname, lname)
-	return
+	return // need not to specify "s" here
 }
 
 /*

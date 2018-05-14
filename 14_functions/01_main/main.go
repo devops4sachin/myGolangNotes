@@ -1,4 +1,4 @@
-package main
+package main // func main needs to be inside the package main only
 
 import "fmt"
 

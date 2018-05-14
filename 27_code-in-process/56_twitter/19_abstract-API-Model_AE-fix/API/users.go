@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/devops4sachin/GolangTraining/56_twitter/19_abstract-API-Model_AE-fix/Model"
+	"github.com/devops4sachin/myGolangNotes/56_twitter/19_abstract-API-Model_AE-fix/Model"
 	"github.com/julienschmidt/httprouter"
 	"google.golang.org/appengine"
 	"google.golang.org/appengine/datastore"

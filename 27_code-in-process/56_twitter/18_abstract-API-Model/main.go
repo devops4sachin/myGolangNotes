@@ -6,7 +6,7 @@ import (
 	"html/template"
 	"net/http"
 
-	"github.com/devops4sachin/GolangTraining/27_code-in-process/56_twitter/18_abstract-API-Model/API"
+	"github.com/devops4sachin/myGolangNotes/27_code-in-process/56_twitter/18_abstract-API-Model/API"
 	"github.com/julienschmidt/httprouter"
 )
 

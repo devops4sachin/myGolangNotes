@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/devops4sachin/GolangTraining/04_scope/01_package-scope/02_visibility/vis"
+	"github.com/devops4sachin/myGolangNotes/04_scope/01_package-scope/02_visibility/vis"
 )
 
 func main() {

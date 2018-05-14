@@ -2,13 +2,17 @@
 
 ######### 55 Section overview
 
+- missing : Check yourself.
+
+		- bool (while-ish)
+			infinite
+		- do-while-ish
+
+		
 	sequence
 	loop / iterative
 		- for loop
 			init, cond, post
-		- bool (while-ish)
-			infinite
-		- do-while-ish
 			break
 		- continue
 		- nested
@@ -97,4 +101,16 @@
 		cases can be expressions
 			evaluate to true, they run
 		type
-	
+
+		
+######### 63 If Statements
+
+	If Statements
+		the not operator
+		!
+		initialization statement
+		if / else
+		if / else if / else
+		if / else if / else if / … / else
+
+######### 64 If Statements		

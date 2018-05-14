@@ -71,7 +71,7 @@
 	​Test your installation and, at the same time, get all of the sample code used in this training!
 		# go env
 		# go version
-		# go get github.com/devops4sachin/GolangTraining
+		# go get github.com/devops4sachin/myGolangNotes
 
 ###### 16. Section Review
 

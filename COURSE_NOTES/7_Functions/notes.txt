@@ -1,0 +1,193 @@
+################# Functions #######################
+
+####### 66 : Section Overview
+
+	functions
+		params
+			multiple “variadic” params
+		args
+			multiple “variadic” args
+		returns
+			multiple returns
+			named returns - yuck!
+		review
+			func expressions
+			closure 
+		callbacks
+		recursion
+		defer
+		anonymous self-executing functions
+		pass by value
+			reference types
+		data structures preview
+			maps
+			slices
+			structs
+		Exercises
+
+		
+		
+####### 67 : Intro to Functions
+
+	- Covered by 01_main, 02_param-arg, 03_two-params folders.
+	
+	func main
+	func syntax
+		func, receiver, identifier, params, returns
+	purpose of functions
+		abstract code
+		code reusability
+	parameters vs. arguments
+	declaring a func with multiple params
+	
+	-** Syntax is 
+	
+	func receiver func_name(parameters) return_values {
+	}
+	
+	
+	
+####### 68 : Function Returns
+
+	- Covered by 04_return, 05_return-naming, 06_return-multiple folders.
+	
+	Func Returns
+		function syntax when declaring a func
+		a single return
+		a named return
+		multiple returns
+		
+		
+######## 69 : Variadic Functions 
+	
+	-** It accepts variable number of parameters, not arguments.
+	- a func that accepts an unlimited number of parameters
+	
+	
+######## 70 : Variadic Arguments
+
+	personal anecdote: head down, ox plowing field; doing the work
+	variadic funcs
+		- my phrase: variadic parameter
+		- my phrase: variadic argument
+	different ways of writing the same functionality
+	
+
+####### 71 : Func Expressions
+
+	assigning a func to a variable
+	
+	
+	
+	
+	
+video #66
+Closure
+one scope enclosing other scopes
+variables declared in the outer scope are accessible in inner scopes
+closure helps us limit the scope of variables
+
+video #67
+Callbacks
+passing a func as an argument
+functional programming not something that is recommended in go, however, it is good to be aware of callbacks
+idiomatic go: write clear, simple, readable code
+
+video #68
+Callback Example
+a cool example of a callback
+
+video #69
+Recursion
+a func that calls itself
+factorial example
+
+video #70
+Defer
+A "defer" statement invokes a function whose execution is deferred to the moment the surrounding function returns, either because the surrounding function executed a return statement, reached the end of its function body, or because the corresponding goroutine is panicking.
+
+video #71
+Pass By Value
+in Go, everything is pass by value
+
+video #72
+Reference Types
+map
+slice
+with reference types, you do not need to pass an address
+
+video #73
+Anonymous Self-Executing Functions
+
+video #74
+Bool Expressions
+expressions vs statements
+bool types
+true, false
+operators
+not 
+    !
+or 
+    ||
+and
+    &&
+
+video #75 - Part I
+Exercises
+Exercises
+multiple returns
+func expression
+variadic func
+bool & operator
+
+video #75 - Part II
+Exercises
+Exercises
+variadic again
+project euler
+
+
+video #75 - Part III
+Exercises
+Project Euler
+https://projecteuler.net/
+
+video #76
+Section Review
+functions
+purpose of functions
+abstract code
+code reusability
+DRY - Don’t Repeat Yourself
+func, receiver, identifier, params, returns
+parameters vs arguments
+variadic funcs
+multiple “variadic” params
+multiple “variadic” args
+returns
+multiple returns
+named returns - yuck!
+func expressions
+assigning a func to a variable
+closure 
+one scope enclosing another
+variables declared in the outer scope are accessible in inner scopes
+closure helps us limit the scope of variables
+callbacks
+passing a func as an argument
+recursion
+factorial
+defer
+anonymous self-executing functions
+pass by value
+reference types
+map
+slice
+with reference types, you do not need to pass an address
+
+	
+
+
+
+
+	

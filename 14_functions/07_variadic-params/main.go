@@ -7,12 +7,12 @@ func main() {
 	fmt.Println(n)
 }
 
-func average(sf ...float64) float64 {
-	fmt.Println(sf)
-	fmt.Printf("%T \n", sf)
+func average(sf ...float64) float64 { // This is variadic function, which accepts Zero or more arguments
+	fmt.Println(sf)         // printing sf, it prints a Slice
+	fmt.Printf("%T \n", sf) // asking for type, which is []float64
 	var total float64
-	for _, v := range sf {
+	for _, v := range sf { // ignoring the indexes of Slice
 		total += v
 	}
-	return total / float64(len(sf))
+	return total / float64(len(sf)) // len of Slice is a function
 }

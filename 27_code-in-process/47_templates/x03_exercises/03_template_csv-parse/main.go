@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/devops4sachin/GolangTraining/47_templates/04_template_csv-parse/parse"
+	"github.com/devops4sachin/myGolangNotes/47_templates/04_template_csv-parse/parse"
 )
 
 func main() {

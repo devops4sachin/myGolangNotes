@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 
-	if !true {
+	if !true { // Negation of True, is False
 		fmt.Println("This did not run")
 	}
 

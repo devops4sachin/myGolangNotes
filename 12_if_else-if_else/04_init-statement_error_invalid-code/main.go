@@ -10,6 +10,6 @@ func main() {
 		fmt.Println(food)
 	}
 
-	fmt.Println(food)
+	fmt.Println(food) // food is out of scope here
 
 }

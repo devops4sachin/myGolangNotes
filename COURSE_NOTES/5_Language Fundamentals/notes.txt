@@ -18,13 +18,13 @@
 
 	- The folder name and the package name should be same.
 	- For some file to be executable, it should be declared as a package main and should have func main().
-		- refer to https://github.com/devops4sachin/GolangTraining/tree/master/02_package
+		- refer to https://github.com/devops4sachin/myGolangNotes/tree/master/02_package
 	
 	- one folder can have many files
 		- package declaration in every file is mandatory
 		- package scope
 			- something in one file is accessible to another file with in the same package.
-				- refer to https://github.com/devops4sachin/GolangTraining/tree/master/02_package/stringutil
+				- refer to https://github.com/devops4sachin/myGolangNotes/tree/master/02_package/stringutil
 				
 		imports have file scope
 	exported / unexported 
