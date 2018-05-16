@@ -12,7 +12,7 @@ func wrapper() func() int {
 
 func main() {
 	increment := wrapper()
-	fmt.Println(increment())
+	fmt.Println(increment()) // Here the x don't have the scope but is visible here
 	fmt.Println(increment())
 }
 

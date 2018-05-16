@@ -10,7 +10,7 @@ func main() {
 	for i := 0; i < 256; i++ {
 		x[i] = i
 	}
-	for i, v := range x {
+	for i, v := range x { // index, value
 		fmt.Printf("%v - %T - %b\n", v, v, v)
 		if i > 50 {
 			break

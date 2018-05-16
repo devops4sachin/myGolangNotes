@@ -13,7 +13,7 @@ func main() {
 	fmt.Println(age)  //24
 }
 
-func changeMe(z *int) {
+func changeMe(z *int) { // We are passing a value of address here
 	fmt.Println(z)  // 0x82023c080
 	fmt.Println(*z) // 44
 	*z = 24

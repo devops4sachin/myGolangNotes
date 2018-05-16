@@ -10,7 +10,7 @@ func world() {
 	fmt.Println("world")
 }
 
-func main() {
+func main() { // This prints "world hello"
 	world()
 	hello()
 }

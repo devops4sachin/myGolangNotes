@@ -1,0 +1,58 @@
+################# Data Structures - Array #######################
+
+
+######## 85 : Section Overview
+
+	array
+		- a numbered sequence of elements of a single type
+		- does not change in size
+		- https://golang.org/ref/spec#Array_types 
+	slice
+		- a list
+		- A slice is a descriptor for a contiguous segment of an underlying array and provides access to a numbered sequence of elements from that array. A slice type denotes the set of all slices of arrays of its element type. 
+		-** The value of an uninitialized slice is nil.
+		- change in size
+		- have a length and a capacity
+		- multi-dimensional
+		https://golang.org/ref/spec#Slice_types 
+	map
+		-key / value storage
+		-a “dictionary”
+		-A map is an unordered group of elements of one type, called the element type, indexed by a set of unique keys of another type, called the key type. 
+		-** The value of an uninitialized map is nil.
+		https://golang.org/ref/spec#Map_types 
+	struct
+		- a data structure
+		- a composite type
+		- allows us to collect properties together
+		https://golang.org/ref/spec#Struct_types
+
+
+######## 86 : Array
+
+	- Definition :
+	
+		- An array is a numbered sequence of elements of a single type.
+			-** If there is number it means its an Array, if no numbers then it means its a Slice.
+		- The number of elements is called the length and is never negative. 
+		-** The length is part of the array's type; it must evaluate to a non-negative constant representable by a value of type int. 
+			- The length of an array can be discovered using the built-in function len. 
+		- The elements can be addressed by integer indices 0 through len(a)-1. 
+		- Array types are always one-dimensional but may be composed to form multi-dimensional types. 
+		-** not dynamic
+			-** does not change in size
+	- a basic array
+		- len
+		- index access
+		- assigning a value to an index position in an array
+
+		
+
+######## 87 : Array Examples
+
+	- understanding the difference between index position and the items stored
+		- if you’re storing three items in array a, those items will be at index positions 0, 1, 2
+			- len(a)-1 is your last index position
+				- eg, 3-1 = 2 → 2 is your last index position for your array, a, which has three items
+	- using break in a loop
+		

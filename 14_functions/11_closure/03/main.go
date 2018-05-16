@@ -6,7 +6,7 @@ func main() {
 	x := 0
 	increment := func() int {
 		x++
-		return x
+		return x // x is accessible here
 	}
 	fmt.Println(increment())
 	fmt.Println(increment())

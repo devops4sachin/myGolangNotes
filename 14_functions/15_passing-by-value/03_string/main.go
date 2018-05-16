@@ -9,7 +9,7 @@ func main() {
 
 	changeMe(name)
 
-	fmt.Println(name) // Todd
+	fmt.Println(name) // Still prints Todd
 }
 
 func changeMe(z string) {

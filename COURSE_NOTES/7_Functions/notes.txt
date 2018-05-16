@@ -81,109 +81,108 @@
 	
 	
 	
-video #66
-Closure
-one scope enclosing other scopes
-variables declared in the outer scope are accessible in inner scopes
-closure helps us limit the scope of variables
+####### 72: Closure
 
-video #67
-Callbacks
-passing a func as an argument
-functional programming not something that is recommended in go, however, it is good to be aware of callbacks
-idiomatic go: write clear, simple, readable code
+	- one scope enclosing other scopes
+	- variables declared in the outer scope are accessible in inner scopes
+	- closure helps us limit the scope of variables
+	- Types	
+		1. Block level scope
+		2. Package level scope
+		
 
-video #68
-Callback Example
-a cool example of a callback
+####### 73: Callbacks
 
-video #69
-Recursion
-a func that calls itself
-factorial example
+	- passing a func as an argument
+	- functional programming not something that is recommended in go, however, it is good to be aware of callbacks
+	- idiomatic go: write clear, simple, readable code
+	
+	
 
-video #70
-Defer
-A "defer" statement invokes a function whose execution is deferred to the moment the surrounding function returns, either because the surrounding function executed a return statement, reached the end of its function body, or because the corresponding goroutine is panicking.
+####### 74: Callback Example
+	- a cool example of a callback
 
-video #71
-Pass By Value
-in Go, everything is pass by value
+	
+####### 75: Recursion
+	- a func that calls itself
+	- factorial example
 
-video #72
-Reference Types
-map
-slice
-with reference types, you do not need to pass an address
+	
+####### 76: Defer
+	- A "defer" statement invokes a function whose execution is deferred to the moment the surrounding function returns, either because the surrounding function executed a return statement, reached the end of its function body, or because the corresponding goroutine is panicking.
 
-video #73
-Anonymous Self-Executing Functions
+	
+####### 77: Pass By Value
+	- in Go, everything is pass by value. The address we pass is a "pass by value"
 
-video #74
-Bool Expressions
-expressions vs statements
-bool types
-true, false
-operators
-not 
-    !
-or 
-    ||
-and
-    &&
+	
+####### 78: Reference Types
+	- map
+	- slice
+	- with reference types, you do not need to pass an address.
+	- Make : It creates slices, maps and channels only and returns an initialized(not zeroed) value of type T (not *T). These 3 types represent references to datastructures that must be initialized befire use.
+	- This is called "pass by reference"
 
-video #75 - Part I
-Exercises
-Exercises
-multiple returns
-func expression
-variadic func
-bool & operator
-
-video #75 - Part II
-Exercises
-Exercises
-variadic again
-project euler
+	
+####### 79: Anonymous Self-Executing Functions
 
 
-video #75 - Part III
-Exercises
-Project Euler
-https://projecteuler.net/
+####### 80: Bool Expressions
+	- expressions vs statements : Expressions always evaluates and gives values, statements are like for, while loops.
+	- bool types : true, false
+	- operators
+		not, written as "!"
+		or, written as "||"
+		and, written as "&&"
 
-video #76
-Section Review
-functions
-purpose of functions
-abstract code
-code reusability
-DRY - Don’t Repeat Yourself
-func, receiver, identifier, params, returns
-parameters vs arguments
-variadic funcs
-multiple “variadic” params
-multiple “variadic” args
-returns
-multiple returns
-named returns - yuck!
-func expressions
-assigning a func to a variable
-closure 
-one scope enclosing another
-variables declared in the outer scope are accessible in inner scopes
-closure helps us limit the scope of variables
-callbacks
-passing a func as an argument
-recursion
-factorial
-defer
-anonymous self-executing functions
-pass by value
-reference types
-map
-slice
-with reference types, you do not need to pass an address
+####### 81:  - Part I Exercises
+
+	- multiple returns
+	- func expression
+	- variadic func
+	- bool & operator
+
+####### 82: - Part II Exercises
+	- variadic again
+	- project euler
+
+
+####### 83: - Part III Exercises
+	Project Euler
+	https://projecteuler.net/
+
+	
+####### 84: Section Review
+	- functions
+	- purpose of functions
+	- abstract code
+	- code reusability
+	- DRY - Don’t Repeat Yourself
+	- func, receiver, identifier, params, returns
+	- parameters vs arguments
+	- variadic funcs
+	- multiple “variadic” params
+	- multiple “variadic” args
+	- returns
+	- multiple returns
+	- named returns - yuck!
+	- func expressions
+	- assigning a func to a variable
+	- closure 
+	- one scope enclosing another
+	- variables declared in the outer scope are accessible in inner scopes
+	- closure helps us limit the scope of variables
+	- callbacks
+	- passing a func as an argument
+	- recursion
+	- factorial
+	- defer
+	- anonymous self-executing functions
+	- pass by value
+	- reference types
+	- map
+	- slice
+	- with reference types, you do not need to pass an address
 
 	
 

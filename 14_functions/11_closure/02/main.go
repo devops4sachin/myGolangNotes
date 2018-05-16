@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-var x int
+var x int // 2. Package level scope
 
 func increment() int {
 	x++
