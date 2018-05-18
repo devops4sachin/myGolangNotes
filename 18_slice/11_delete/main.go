@@ -10,7 +10,7 @@ func main() {
 	mySlice = append(mySlice, myOtherSlice...)
 	fmt.Println(mySlice)
 
-	mySlice = append(mySlice[:2], mySlice[3:]...)
+	mySlice = append(mySlice[:2], mySlice[3:]...) // We will delete "Wednesday" from the slice
 	fmt.Println(mySlice)
 
 }

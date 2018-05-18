@@ -11,7 +11,7 @@ func main() {
 	greeting[0] = "Good morning!"
 	greeting[1] = "Bonjour!"
 	greeting[2] = "buenos dias!"
-	greeting[3] = "suprabadham"
+	greeting[3] = "suprabadham" // Will get error "index out of range", you have to use append() to use new index
 
 	fmt.Println(greeting[2])
 }
