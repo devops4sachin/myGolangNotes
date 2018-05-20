@@ -12,7 +12,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	bs, err := ioutil.ReadAll(res.Body)
+	bs, err := ioutil.ReadAll(res.Body) // returns byte slice
 	res.Body.Close()
 	if err != nil {
 		log.Fatal(err)

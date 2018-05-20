@@ -32,3 +32,76 @@
 	
 	- Like arrays, slices are always one-dimensional but may be composed to construct higher-dimensional objects. (multi-dimensional slices)
 	- a basic slice 
+
+	
+	
+######## 89 : Slice Examples
+
+	- length and capacity
+		- a great example
+	- index out of range errors
+	- appending items to slices
+	- deleting items from slices
+
+
+######## 90 : More Slice Examples
+
+	- multidimensional slice
+	- incrementing a slice
+
+
+######## 91 : Creating a Slice
+
+	- shorthand
+	- var
+		- sets slice to zero value which is nil
+	- make
+
+
+######## 92 : Incrementing A Slice Item
+
+	- incrementing a slice item
+	- review of slices
+		- len, cap, underlying array, append
+
+
+######## 93 : Section Review
+
+	- definition
+		- a list of values of a certain Type
+	- internals
+		- reference type
+		- pointer, len, cap
+		- built on-top of an array
+			- another way to say it: “points to an array”
+		- The value of an uninitialized slice is nil. 
+			-** because it is a reference type
+			- A slice, once initialized, is always associated with an underlying array that holds its elements. 
+			- slices are dynamic (unlike arrays)
+				- their length may change during execution. 
+		- The array underlying a slice may extend past the end of the slice. 
+			- Capacity is a measure of that extent: 
+			- The capacity of a slice a can be discovered using the built-in function cap(a). 
+	- make
+		- A slice created with make always allocates a new, hidden array to which the returned slice value refers. 
+			- make([]T, length, capacity) 
+			- make([]int, 50, 100) 
+				- same as this: new([100]int)[0:50] 
+		- Like arrays, slices are always one-dimensional but may be composed to construct higher-dimensional objects. (multi-dimensional slices)
+	- index out of range errors
+	- appending items to slices
+		- access by index if the index is less than the length of the slice less one
+			- 0 through len(s)-1.
+	- deleting items from slices
+		- mySlice = append(mySlice[:2], mySlice[3:]...)
+	- incrementing a slice
+		- mySlice[0]++
+		
+	- creating a slice
+		- shorthand
+			- student := []string{}
+		- var
+			- sets slice to zero value which is nil
+			- var student []string
+		- make
+			- student := make([]string, 35)

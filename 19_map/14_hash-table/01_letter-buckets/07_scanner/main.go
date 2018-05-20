@@ -14,7 +14,7 @@ func main() {
 	// Set the split function for the scanning operation.
 	scanner.Split(bufio.ScanWords)
 	// Count the words.
-	for scanner.Scan() {
+	for scanner.Scan() { // returns a bool true or false, false once its done with reading the stuff
 		fmt.Println(scanner.Text())
 	}
 	if err := scanner.Err(); err != nil {

@@ -31,8 +31,8 @@ func main() {
 
 func hashBucket(word string, buckets int) int {
 	var sum int
-	for _, v := range word {
+	for _, v := range word { // Added all the values of the letter in a word.
 		sum += int(v)
 	}
-	return sum % buckets
+	return sum % buckets // remainder after division by twelve.
 }

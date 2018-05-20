@@ -11,5 +11,5 @@ func main() {
 
 	myGreeting["Harleen"] = "Howdy"
 
-	fmt.Println(len(myGreeting))
+	fmt.Println(len(myGreeting)) // length of a map
 }

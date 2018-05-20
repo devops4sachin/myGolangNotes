@@ -7,7 +7,7 @@ func main() {
 	fmt.Println(n)
 }
 
-func hashBucket(word string, buckets int) int {
+func hashBucket(word string, buckets int) int { // Creating a hash function. Takes word and number of buckets.
 	letter := int(word[0])
 	bucket := letter % buckets
 	return bucket

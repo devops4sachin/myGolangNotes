@@ -1,0 +1,122 @@
+################# Data Structures - MAP #######################
+
+
+######## 94 : Maps Introduction (called Dictionaries in other lang)
+	- maps
+		- key / value storage
+		- a “dictionary”
+		- an "unordered" group of elements of one type, called the element type
+			- indexed by a set of unique keys of another type, called the key type. 
+			-** The value of an uninitialized map is nil.
+	
+	- a map is a reference type, hence uninitialized map is nil.
+	- Slices, Maps and Channels are reference types.
+	
+	-** "append" function is not supported for map.
+	
+	- A "nil" map is equivalent to an empty map except that no elements may be added.
+	
+	- The key can be of any type for which the equality operator is defined, such as integers, floating point and complex numbers, strings, pointers, interfaces (as long as the dynamic type supports equality), structs and arrays.
+	
+	- Slices(not strings) cannot be used as map keys, because equality is not defined on them.
+	
+	- If you pass a map to a function that changes the contents of the map, the changes will be visible in the caller.
+	
+	- An attempt to fetch a map value with a key that is not present in the map will return the zero value for the type of the entries in the map. For instance, if the map contains integers, looking up a non-existent key will return 0.
+	
+	- “comma ok” idiom : In this example, if tz is present, seconds will be set appropriately and ok will be true; if not, seconds will be set to zero and ok will be false.
+	
+	func offset(tz string) int {
+		if seconds, ok := timeZone[tz]; ok {
+			return seconds
+		}
+		log.Println("unknown time zone:", tz)
+		return 0
+	}
+
+	
+######## 94 : Map Examples  - Part I
+	- examples
+		- creating maps
+			- var
+			- make
+			- shorthand
+		- adding entries
+
+		
+######## 94 : Map Examples  - Part II
+	- examples
+		- updating entries
+
+		
+######## 94 : Map Examples  - Part III
+	- examples
+		- deleting entries
+
+		
+######## 94 : Map Documentation
+	- Refer to this link, 
+		https://www.golang-book.com/books/intro/6
+	- documentation
+		- golang spec
+		- effective go
+		- github golang
+	- comma, ok idiom
+
+
+######## 94 : Map Range Loop
+	- range loop
+
+######## 94 : GitHub Pull
+
+######## 94 : Hash Tables
+	- Macro View of Map Internals In Go
+		- https://www.ardanlabs.com/blog/2013/12/macro-view-of-map-internals-in-go.html
+	- hash tables explained
+	
+	-** Slices have an underlying data structure of an array.
+	
+	-** MAPs have an underlying data structure of a Hash table, an Hash table is built out of arrays.
+
+	
+######## 94 : Hasing Words
+	- all english words
+		- a tour of a program that introduces us to
+			- interfaces
+			- buffers
+			- scanners
+	- previews interfaces
+
+
+######## 94 : Build A Hash Table
+	- building a hash table
+		- letter buckets
+			- refer to 14_hash_table >> 01_letter-buckets >> 10_hash-letter-buckets
+		- remainder buckets
+			- refer to 14_hash_table >> 01_letter-buckets >> 11_hash-remainder-buckets
+		- hashing words
+			- refer to 14_hash_table >> 02_even-distribution-hash
+
+######## 94 : building our hash function
+		- refer to 14_hash_table >> 01_letter-buckets >> 01_runes-are-numbers to 09_int-slice-plus-plus
+	
+	- hashing words in more detail
+	- abstraction / modularizing code
+	- troubleshooting a conversion error
+	- bufio.NewScanner
+	- scanner.Split
+	- bufio.ScanWords
+
+######## 94 : finished hash algorithm
+
+		- refer to 14_hash_table >> 03_words-in-buckets >> 01_slice-bucket
+		
+	- http.Get
+	- bufio.NewScanner
+	- scanner.Split
+	- bufio.ScanWords
+	- multi-dimensional slice
+		- slice of slice of string
+	- defer
+	- ++
+

@@ -29,7 +29,7 @@ func main() {
 	for scanner.Scan() {
 		word := scanner.Text()
 		n := hashBucket(word, 12)
-		buckets[n] = append(buckets[n], word)
+		buckets[n] = append(buckets[n], word) // append to the bucket
 	}
 	// Print len of each bucket
 	for i := 0; i < 12; i++ {

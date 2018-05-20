@@ -8,7 +8,7 @@ func main() {
 		0: "Good morning!",
 		1: "Bonjour!",
 		2: "Buenos dias!",
-		3: "Bongiorno!",
+		3: "Bongiorno!", // remember we have trailing comma here
 	}
 
 	for key, val := range myGreeting {

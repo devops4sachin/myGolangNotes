@@ -9,7 +9,7 @@ func main() {
 		"Jenny": "Bonjour!",
 	}
 
-	myGreeting["Harleen"] = "Howdy"
+	myGreeting["Harleen"] = "Howdy" // adding entry to map
 
 	fmt.Println(myGreeting)
 }

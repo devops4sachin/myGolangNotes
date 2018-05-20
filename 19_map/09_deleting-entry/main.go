@@ -12,6 +12,6 @@ func main() {
 	}
 
 	fmt.Println(myGreeting)
-	delete(myGreeting, "two")
+	delete(myGreeting, "two") // delete entry from the map
 	fmt.Println(myGreeting)
 }
